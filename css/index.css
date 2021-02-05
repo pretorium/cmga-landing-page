@@ -80,7 +80,7 @@ section {
   font-size: 14px;
   padding-right: 20px;
   transition: color .4s;
-  font-family: Roboto-Regular;
+  font-family: Roboto-Regular, sans-serif;
 }
 
 .option--active {
@@ -155,7 +155,7 @@ section {
   color: black;
   font-size: 14px;
   padding-left: 20px;
-  font-family: Roboto-Regular;
+  font-family: Roboto-Regular, sans-serif;
   transition: font-size .1s;
 }
 
@@ -206,7 +206,7 @@ section {
   text-align: center;
   font-size: 120px;
   line-height: 115px;
-  font-family: Spartan-Bold;
+  font-family: Spartan-Bold, sans-serif;
 }
 
 .shield__text {
@@ -214,7 +214,7 @@ section {
   font-size: 16px;
   font-weight: 700;
   text-align: center;
-  font-family: Spartan-Regular;
+  font-family: Spartan-Regular, sans-serif;
 }
 
 .shield__bottomText {
@@ -224,7 +224,7 @@ section {
   text-align: center;
   padding-top: 40px;
   padding-bottom: 26px;
-  font-family: Spartan-Medium;
+  font-family: Spartan-Medium, sans-serif;
 }
 
 .containerBar {
@@ -240,7 +240,7 @@ section {
   font-size: 16px;
   white-space: nowrap;
   padding-bottom: 19px;
-  font-family: Spartan-bold;
+  font-family: Spartan-bold, sans-serif;
 }
 
 .containerBar__bar {
@@ -271,12 +271,12 @@ section {
 	font-size: 18px;
   padding-top: 15px;
   white-space: nowrap;
-  font-family: Spartan-Bold;
+  font-family: Spartan-Bold, sans-serif;
 }
 
 .containerBar__textBottom .textLeft {
 	color: var(--yellow);
-  textAlign: left;
+  text-align: left;
 }
 
 .containerBar__textBottom .textRight {
@@ -306,42 +306,42 @@ section {
 	color: var(--white);
   font-size: 80px;
   white-space: nowrap;
-  font-family: Spartan-ExtraBold;
+  font-family: Spartan-ExtraBold, sans-serif;
 }
 
 .contentBanner__text span:nth-child(2) {
 	color: var(--red);
   font-size: 80px;
   white-space: nowrap;
-  font-family: Spartan-ExtraBold;
+  font-family: Spartan-ExtraBold, sans-serif;
 }
 
 .contentBanner__text span:nth-child(4) {
 	color: var(--white);
   font-size: 52px;
   white-space: nowrap;
-  font-family: Spartan-Bold;
+  font-family: Spartan-Bold, sans-serif;
 }
 
 .contentBanner__text span:nth-child(6) {
 	color: var(--white);
   font-size: 42px;
   white-space: nowrap;
-  font-family: Spartan-Regular;
+  font-family: Spartan-Regular, sans-serif;
 }
 
 .contentBanner__text span:nth-child(8) {
 	color: var(--red);
   font-size: 52px;
   white-space: nowrap;
-  font-family: Spartan-Bold;
+  font-family: Spartan-Bold, sans-serif;
 }
 
 .contentBanner__text span:nth-child(10) {
 	color: var(--white);
   font-size: 42px;
   white-space: nowrap;
-  font-family: Spartan-Regular;
+  font-family: Spartan-Regular, sans-serif;
 }
 
 .containerLogo {
@@ -369,19 +369,19 @@ section {
 	font-size: 20px;
   white-space: nowrap;
   line-height: 28px;
-  font-family: Spartan-Light;
+  font-family: Spartan-Light, sans-serif;
 }
 
 .containerLogo__textLogo span:nth-child(3) {
 	font-size: 40px;
   white-space: nowrap;
-  font-family: Spartan-ExtraBold;
+  font-family: Spartan-ExtraBold, sans-serif;
 }
 
 .containerLogo__textLogo span:nth-child(5) {
 	font-size: 18px;
   white-space: nowrap;
-  font-family: Spartan-Bold;
+  font-family: Spartan-Bold, sans-serif;
 }
 
 /*Estilos de la seccion "Sobre nosotros"*/
@@ -412,12 +412,12 @@ section {
 .containerText p:nth-child(1) {
 	color: var(--beige);
 	margin-bottom: 0;
-	font-family: Spartan-Bold;
+	font-family: Spartan-Bold, sans-serif;
 }
 
 .containerText p:nth-child(2) {
 	color: var(--wine);
-  font-family: Spartan-Black;
+  font-family: Spartan-Black, sans-serif;
 }
 
 .aboutUs__contentRight {
@@ -436,7 +436,7 @@ section {
 	color: black;
   font-size: 16px;
   line-height: 24px;
-  font-family: Spartan-Regular;
+  font-family: Spartan-Regular, sans-serif;
 }
 
 .containerParagraph p:nth-child(1) {
@@ -451,8 +451,19 @@ section {
   background-image: url(../src/img/stadium.png);
 }
 
+#bannerStadium::before {
+  top: 0;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 100%;
+  z-index: 4;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.6);
+}
+
 .bannerStadium {
-	z-index: 4;
+	z-index: 5;
 	padding-top: 195px;
   padding-bottom: 195px;
   position: relative;
@@ -462,7 +473,7 @@ section {
 	grid-column: 4 / 10;
 }
 
-.bannerStadium__text::before {
+/*.bannerStadium__text::before {
 	top: 0;
   left: 0;
   content: "";
@@ -471,7 +482,7 @@ section {
   z-index: 5;
   position: absolute;
   background: rgba(0, 0, 0, 0.6);
-}
+}*/
 
 .bannerStadium__text > p {
 	z-index: 6;
@@ -482,11 +493,11 @@ section {
 }
 
 .bannerStadium__text p:nth-child(1) {
-  font-family: Spartan-Bold;
+  font-family: Spartan-Bold, sans-serif;
 }
 
 .bannerStadium__text p:nth-child(2) {
-	font-family: Spartan-Medium;
+	font-family: Spartan-Medium, sans-serif;
 }
 
 /*Estilos de la seccion "Nuestros Objetivos"*/
@@ -514,7 +525,7 @@ section {
 	color: white;
   font-size: 16px;
   line-height: 23px;
-  font-family: Spartan-Light;
+  font-family: Spartan-Light, sans-serif;
 }
 
 .wrapperText p:first-child {
@@ -539,13 +550,13 @@ section {
 	color: var(--white);
   font-size: 42px;
   margin-bottom: 0;
-  font-family: Spartan-Regular;
+  font-family: Spartan-Regular, sans-serif;
 }
 
 .wrapperTitle__title p:nth-child(2) {
 	color: var(--gold);
   font-size: 42px;
-  font-family: Spartan-ExtraBold;
+  font-family: Spartan-ExtraBold, sans-serif;
 }
 
 .wrapperTitle__points {
@@ -576,7 +587,7 @@ section {
   color: var(--wine);
   font-size: 42px;
   padding-bottom: 41px;
-  font-family: Spartan-Bold;
+  font-family: Spartan-Bold, sans-serif;
 }
 
 .wrapperLeft > div {
@@ -595,7 +606,7 @@ section {
   text-align: left;
   font-size: 12px;
   font-weight: bold;
-  font-family: Roboto-Regular;
+  font-family: Roboto-Regular, sans-serif;
 }
 
 .wrapperLeft__btnStatus {
@@ -647,7 +658,7 @@ section {
   color: 'black';
   font-size: 16px;
   line-height: 24px;
-  font-family: Spartan-Regular;
+  font-family: Spartan-Regular, sans-serif;
 }
 
 .wrapperRight p:first-child {
@@ -673,7 +684,7 @@ section {
   position: relative;
   z-index: 11;
   text-align: center;
-  font-family: Spartan-Light;
+  font-family: Spartan-Light, sans-serif;
 }
 
 .wrapper {
@@ -684,8 +695,8 @@ section {
   left: 0;
   height: 100%;
   transform: translate3d(0, 0, 0);
-  /*animation: moveSlideshow 35s linear infinite; */
-  animation: moveSlideshow 5s linear infinite;
+  animation: moveSlideshow 35s linear infinite;
+  /* animation: moveSlideshow 5s linear infinite; */
 }
 
 .wrapper:hover {
@@ -709,6 +720,12 @@ section {
   z-index: 1;
   cursor: pointer;
   background-size: cover;
+}
+
+.partner > img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
 }
 
 .partner::after {
@@ -769,7 +786,7 @@ section {
   line-height: 24px;
   text-align: center;
   padding-bottom: 52px;
-  font-family: Spartan-Regular;
+  font-family: Spartan-Regular, sans-serif;
 }
 
 .outline__logoBcp {
@@ -794,7 +811,7 @@ section {
   line-height: 24px;
   text-align: center;
   margin-bottom: 0;
-  font-family: Spartan-Medium;
+  font-family: Spartan-Medium, sans-serif;
 }
 
 .takePart__contentRight {
@@ -827,7 +844,7 @@ section {
   text-align: left;
   font-size: 12px;
   font-weight: bold;
-  font-family: Roboto-Regular;
+  font-family: Roboto-Regular, sans-serif;
 }
 
 .contentRight__title {
@@ -837,12 +854,12 @@ section {
   padding-bottom: 20px;
   margin-bottom: 0;
   line-height: 1;
-  font-family: Spartan-ExtraBold;
+  font-family: Spartan-ExtraBold, sans-serif;
 }
 
 .contentRight__title > span {
   color: var(--beige);
-  font-family: Spartan-Medium;
+  font-family: Spartan-Medium, sans-serif;
 }
 
 .contentRight__paragraph {
@@ -852,7 +869,7 @@ section {
   line-height: 24px;
   text-align: right;
   padding-bottom: 46px;
-  font-family: Spartan-Regular;
+  font-family: Spartan-Regular, sans-serif;
 }
 
 .contentRight__btn {
@@ -914,7 +931,7 @@ section {
   line-height: 1;
   text-align: center;
   padding-bottom: 27px;
-  font-family: Spartan-Bold;
+  font-family: Spartan-Bold, sans-serif;
 }
 
 .contactUs__content p {
@@ -923,7 +940,7 @@ section {
   text-align: center;
   line-height: 18px;
   padding-bottom: 38px;
-  font-family: Spartan-Light;
+  font-family: Spartan-Light, sans-serif;
 }
 
 .contactUs__content > form {
@@ -943,7 +960,7 @@ section {
   color: white;
   font-size: 16px;
   line-height: 18px;
-  font-family: Spartan-Light;
+  font-family: Spartan-Light, sans-serif;
 }
 
 .contactUs__content input {
@@ -954,7 +971,7 @@ section {
   border-radius: 10px;
   border: 1px solid #DBDCE8;
   margin-top: 14px;
-  font-family: Spartan-Regular;
+  font-family: Spartan-Regular, sans-serif;
 }
 
 .contactUs__content textarea {
@@ -965,7 +982,7 @@ section {
   border-radius: 10px;
   border: 1px solid #DBDCE8;
   margin-top: 14px;
-  font-family: Spartan-Regular;
+  font-family: Spartan-Regular, sans-serif;
 }
 
 .contactUs__content input:focus,
@@ -987,11 +1004,12 @@ section {
   padding: 19px 0;
   font-size: 13px;
   margin-top: 22px;
-  font-family: Spartan-Medium;
+  font-family: Spartan-Medium, sans-serif;
 }
 
 .footer {
   display: flex;
+  position: relative;
   background-color: #221F20;
   justify-content: center;
   color: var(--beige);
